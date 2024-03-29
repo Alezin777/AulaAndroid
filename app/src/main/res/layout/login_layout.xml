@@ -7,19 +7,100 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:hint="Usuario"
-        app:startIconDrawable="@drawable/baseline_person"
-        >
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_person">
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textCapCharacters"/>
+            android:inputType="textCapCharacters"
+            android:maxLength="50" />
+
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Insira um texto"
+        app:helperText="Insira seu nome"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#673AB7">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:hint="Insira um texto"
+        app:helperText="Insira seu nome"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#673AB7">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/baseline_add" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:text="Cadastrar"
+        app:icon="@drawable/baseline_add" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/baseline_add_box"
+        android:layout_marginTop="5dp"
+        />
 
 
 </LinearLayout>
